@@ -29,11 +29,26 @@
 * **JavaScript (ES6)**: `main.js`에서 카테고리 필터링 및 리스트 내비게이션 구현
 * **Structure**:
     ```text
+        MY_PROFILE
+    ├── data/
+    │   ├── affiliate.json
+    │   ├── article.json
+    │   ├── data.json
+    │   └── portfolio.json
+    ├── src/
+    │   ├── css/
+    │   │   └── main.css
+    │   ├── js/
+    │   │   ├── main.js
+    │   │   └── security.js
+    │   ├── github.png    
+    │   ├── instagram.png
+    │   ├── logo.png
+    │   ├── nodevpn.png
+    │   ├── tiktok.png
+    │   └── youtube.png
     ├── index.html
-    └── src/
-        ├── css/main.css
-        ├── js/main.js   <-- 비즈니스 로직 분리
-        └── images/
+    └── README.md
     ```
 
 <details>
@@ -44,6 +59,6 @@
 const filterBtns = document.querySelectorAll('.filter_btn');
 filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-        // 카테고리 변경 및 리스트 렌더링 로직...
+        // 카테고리 변경 및 리스트 렌더링 로직
     });
 });
