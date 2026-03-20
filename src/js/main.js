@@ -31,7 +31,7 @@ fetch("./data/data.json")
             data[category] = json;
         });
 
-        filteredLists = data["강의 목차"] || [];
+        filteredLists = data["포스팅"] || [];
 
         totalPage = Math.ceil(filteredLists.length / perPage);
 
